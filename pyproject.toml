@@ -1,0 +1,24 @@
+[project]
+name = "homeserver-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "boto3",
+    "fastapi[standard]",
+    "httpx>=0.28.1",
+    "mypy>=1.19.1",
+    "pydantic",
+    "python-dotenv",
+    "strands-agents[mistral,openai]>=1.28.0",
+    "strands-agents-builder>=0.1.10",
+    "strands-agents-tools>=0.2.22",
+    "uvicorn",
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "ty>=0.0.20",
+]
